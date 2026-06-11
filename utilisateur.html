@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+    <!-- ===== ASIDE ===== -->
+    <aside>
+        <img src="image/Logo.png" class="w-100" alt="">
+
+        <ul class="list-unstyled">
+
+            <li class="mt-1">
+                <a href="dashbor.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Dashbord ></span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="utilisateur.html" class="text-decoration-none text-white active d-block p-2 rounded">
+                    <span class="fs-2"> Utilisateur > </span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="messagerie.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-3"> Messagerie > </span>
+                </a>
+            </li>
+            <li class="mb-1">
+                <a href="tache.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Taches > </span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="#" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Cenlendrier> </span>
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="compte.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Comptes > </span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ===== CONTENU ===== -->
+    <div class="content">
+
+        <!-- ===== HEADER ===== -->
+        <div class="top-header rounded mt-1 d-flex align-items-center justify-content-between">
+
+            <div>
+                <h2 class="mb-0 text-white">Bonjour Adminou Sani</h2>
+                <small class="fs-4 text-white"><i class="bi bi-house-fill"></i> Tableau de bord</small>
+            </div>
+
+            <div class="d-flex gap-3 fs-4">
+                <i class="bi bi-gear-fill text-white fs-3"></i>
+
+                <div class="notification-icon">
+                    <i class="bi bi-bell-fill text-white fs-3"></i>
+                    <span class="notification-badge"></span>
+                </div>
+
+                <i class="bi bi-person-fill text-white fs-3"></i>
+            </div>
+
+        </div>
+
+        <!-- ===== MAIN ===== -->
+        <main>
+
+            <!-- CARD QUI SCROLL -->
+            <div class="scroll-card fs-3 text-white">
+                <p>choississez un des filtres suivant pour modifier la liste</p>
+
+                <div class="d-flex flex-column gap-2">
+                    <div class="d-flex gap-3 align-items-center justify-content-between">
+
+                        <form method="get" action="" class="w-100 ">
+                            <p>
+                                <select name="pays" id="pays" class="rounded w-100 selec text-white ">
+                                    <option value="espagne">tous les reels</option>
+                                </select>
+                            </p>
+                        </form>
+                        <form method="get" action="" class="w-100 ">
+                            <p>
+                                <select name="pays" id="pays" class="rounded w-100 selec text-white ">
+                                    <option value="espagne">tous les reels</option>
+                                </select>
+                            </p>
+                        </form>
+                        <form method="get" action="" class="w-100  ">
+                            <p>
+                                <select name="pays" id="pays" class="rounded w-100 selec text-white ">
+                                    <option value="espagne">tous les reels</option>
+                                </select>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center justify-content-end">
+
+                        <!-- <div  > -->
+                        <!-- <span>tous les reels</span> -->
+                        <input type="text" placeholder="Recherche d'un nouveau utilisateur"
+                            class="utili bg-none rounded fs-5. p-2">
+
+
+                        <div class="utili1 rounded fs-4 ps-2">
+                            <span class=" fs-5"> <i class="bi bi-plus"></i>  Exporter</span>
+
+                        </div>
+                        <div class="utili2 rounded ">
+                            <span class="fs-5 pb-2"> <i class="bi bi-plus"></i> Ajouter un nouvelle utilisateur</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex flex-column gap-2">
+                        <div class="d-flex gap-3 mt-5 pb-3 utia align-items-center justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" rounded ps-2">
+                                <span>Utilisateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>role </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>action</span>
+
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 mt-2 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Administrateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Marketeurs </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Controleurs </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Administrateur</span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Administrateur</span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>marqueteur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>administrateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>marqueteur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>Communicateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>administrateur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>marqueteur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>inactif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+                        <div
+                            class="d-flex gap-3 p-2 rounded utia1 justify-content-start align-items-start fs-5 justify-content-between">
+
+                            <input type="checkbox" class="check">
+                            <div class=" d-flex gap-2 align-items-center justify-content-center rounded ps-2">
+                                <div class="admi1 d-flex align-items-center justify-content-center fs-3">AS</div>
+                                <div> Adminou Sani <br>Adminou@mail.com</div>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>controleur </span>
+
+                            </div>
+                            <div class=" rounded ps-2">
+                                <span>actif</span>
+
+
+                            </div>
+                            <div class=" d-flex fs-2 gap-2 align-items-center justify-content-center rounded ps-2">
+                                <i class="bi bi-pen"></i>
+                                <i class="bi bi-trash3"></i>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

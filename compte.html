@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+
+    <!-- ===== ASIDE ===== -->
+    <aside>
+        <img src="image/Logo.png" class="w-100" alt="">
+
+        <ul class="list-unstyled">
+
+            <li class="mt-1">
+                <a href="dashbor.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Dashbord ></span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="utilisateur.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Utilisateur > </span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="messagerie.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-3"> Messagerie > </span>
+                </a>
+            </li>
+            <li class="mb-1">
+                <a href="tache.html" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Taches > </span>
+                </a>
+            </li>
+
+            <li class="mb-1">
+                <a href="#" class="text-decoration-none text-white d-block p-2 rounded">
+                    <span class="fs-2"> Cenlendrier> </span>
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="compte.html" class="text-decoration-none active text-white d-block p-2 rounded">
+                    <span class="fs-2"> Comptes > </span>
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ===== CONTENU ===== -->
+    <div class="content">
+
+        <!-- ===== HEADER ===== -->
+        <div class="top-header rounded mt-1 d-flex align-items-center justify-content-between">
+
+            <div>
+                <h2 class="mb-0 text-white">Bonjour Adminou Sani</h2>
+                <small class="fs-4 text-white"><i class="bi bi-house-fill"></i> Tableau de bord</small>
+            </div>
+
+            <div class="d-flex gap-3 fs-4">
+                <i class="bi bi-gear-fill text-white fs-3"></i>
+
+                <div class="notification-icon">
+                    <i class="bi bi-bell-fill text-white fs-3"></i>
+                    <span class="notification-badge"></span>
+                </div>
+
+                <i class="bi bi-person-fill text-white fs-3"></i>
+            </div>
+
+        </div>
+
+        <!-- ===== MAIN ===== -->
+        <main>
+
+            <!-- CARD QUI SCROLL -->
+
+
+            <div class="scroll-card fs-3 text-white">
+
+                <div class="container-fluid">
+
+                    <div class="scroll-card">
+
+                        <!-- MENU -->
+                        <ul class="nav nav-pills mb-4 fs-4 justify-content-between">
+
+                            <li class="nav-item">
+                                <button class="nav-link active text-white" data-bs-toggle="pill"
+                                    data-bs-target="#first">
+                                   <i class="bi bi-person"></i>
+                                    Compte
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="nav-link text-white" data-bs-toggle="pill" data-bs-target="#second">
+                                   <i class="bi bi-lock"></i>
+                                    Sécurité
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="nav-link text-white" data-bs-toggle="pill" data-bs-target="#third">
+                                  <i class="bi bi-files"></i>
+                                    Document
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="nav-link text-white" data-bs-toggle="pill" data-bs-target="#fourth">
+                                   <i class="bi bi-journal-text"></i>
+                                    Historique
+                                </button>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="nav-link text-white" data-bs-toggle="pill" data-bs-target="#fifth">
+                                   <i class="bi bi-paperclip"></i>
+                                    Connexion
+                                </button>
+                            </li>
+                           
+
+                        </ul>
+
+                        <!-- CONTENUS -->
+                        <div class="tab-content">
+
+                            <!-- FIRST -->
+                            <div class="tab-pane   fade show active" id="first">
+
+                                <div class=" d-flex flex-column shadow suprima p-3 gap-2">
+
+                                
+
+
+                                <div class="d-flex gap-2 align-items-start justify-content-start">
+
+                                    <div class="fs-4 compte d-flex align-items-center justify-content-center gap-2">
+
+                                    </div>
+                                    <div class="d-flex flex-column gap-2">
+                                        <div class="d-flex gap-2">
+                                            <div class="fs-4">
+                                                <h5 class="profi p-2 rounded ">changer la photo de profil </h5>
+
+                                            </div>
+
+                                            <div class="fs-4">
+                                                <h5 class="profi1 p-2 rounded ">Rénitialisé </h5>
+                                            </div>
+
+                                        </div>
+
+                                        <h6>Format pris en chargz PNG, JPG, GIF <br> Taille minimun pris en charge 900K
+                                        </h6>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex flex-column gap-2">
+
+                                    <div class="d-flex w-100 gap-2">
+                                        <form action="" class="text-start w-100">
+                                            <label for="" class="fs-4 text-white">Nom</label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">Email </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                            <label for="" class="fs-4 text-white">Role</label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">N° de téléphone </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                            <label for="" class="fs-4 text-white">Pays</label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">Boite postale </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                        </form>
+
+                                        <form action="" class="text-start w-100">
+                                            <label for="" class="fs-4 text-white">Prénom</label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">Status </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                            <label for="" class="fs-4 text-white">Tache</label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">Adress </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                            <label for="" class="fs-4 text-white">ville </label> <br>
+                                            <input type="text"
+                                                class="p-4 text-white w-100 border bord-co cole rounded mt-2 "> <br>
+                                            <label for="" class="fs-4 text-white">Langue </label> <br>
+                                            <input type="password"
+                                                class="p-4 text-white cole bord-co w-100 border rounded mt-2">
+                                        </form>
+
+
+
+                                    </div>
+
+                                    <div class="d-flex gap-2">
+                                        <div class="fs-4">
+                                            <h5 class="profi p-2 rounded ">Sauvegarder les chargement </h5>
+
+                                        </div>
+
+                                        <div class="fs-4">
+                                            <h5 class="profi1 p-2 rounded ">Annuler </h5>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+                                <div
+                                    class="d-flex align-items-start  flex-column gap-3 mt-3 p-2 rounded shadow-ls suprima shadow">
+                                    <h6>supprimez le compte </h6>
+                                    <h6 class="suppr w-100 p-4 rounded">Etes vous sur de vouloir supprimez ce compte <br> 
+                                    une fois supprimez vous ne pouvez plus recuperez ce comptes</h6> 
+                                   <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <input type="checkbox"> <h6>je confirme la suppression de ce compte</h6>  
+
+                                   </div>                               
+                                </div>
+
+                            </div>
+
+                            <!-- SECOND -->
+                            <div class="tab-pane fade" id="second">
+
+                                <div class="d-flex flex-column gap-3">
+
+                                    <div class="d-flex align-items-center justify-content-between">
+
+                                        <div class="fs-4 d-flex align-items-center justify-content-center gap-2">
+                                            <input type="checkbox" class="check">
+                                            <i class="bi bi-pen"></i>
+                                            <i class="bi bi-trash3"></i>
+                                            <i class="bi bi-envelope-open"></i>
+                                            <i class="bi bi-tag"></i>
+                                        </div>
+
+                                        <div class="fs-4">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="d-flex gap-3 p-2 rounded utia1 justify-content-between align-items-center">
+
+                                        <input type="checkbox" class="check">
+
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div class="admi1 d-flex align-items-center justify-content-center">
+                                                BS
+                                            </div>
+
+                                            <div>
+                                                Boubacar
+                                                <br>
+                                                boubacar@mail.com
+                                            </div>
+                                        </div>
+
+                                        <div>Role : Utilisateur</div>
+
+                                        <div>Statut : Actif</div>
+
+                                        <div class="fs-4">
+                                            <i class="bi bi-pen"></i>
+                                            <i class="bi bi-trash3"></i>
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="d-flex gap-3 p-2 rounded utia1 justify-content-between align-items-center">
+
+                                        <input type="checkbox" class="check">
+
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <div class="admi1 d-flex align-items-center justify-content-center">
+                                                IS
+                                            </div>
+
+                                            <div>
+                                                Ibrahim
+                                                <br>
+                                                ibrahim@mail.com
+                                            </div>
+                                        </div>
+
+                                        <div>Role : Modérateur</div>
+
+                                        <div>Statut : Inactif</div>
+
+                                        <div class="fs-4">
+                                            <i class="bi bi-pen"></i>
+                                            <i class="bi bi-trash3"></i>
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- THIRD -->
+                            <div class="tab-pane fade" id="third">
+                                <h3>Contenu Third</h3>
+                                <p>Liste des messages.</p>
+                            </div>
+
+                            <!-- FOURTH -->
+                            <div class="tab-pane fade" id="fourth">
+                                <h3>Contenu Fourth</h3>
+                                <p>Liste des tâches.</p>
+                            </div>
+
+                            <!-- FIFTH -->
+                            <div class="tab-pane fade" id="fifth">
+                                <h3>Contenu Fifth</h3>
+                                <p>Liste des comptes.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
