@@ -29,7 +29,8 @@ body {
 
 .content {
   width: 400px;
-  background-color:#727272;
+  /* background-color:#727272; */
+  background-color: rgba(200, 195, 195, 0.2);
   border-radius:.28em;
   box-shadow:0 0 .25em rgba(0,0,0,.25);
   box-sizing:border-box;
@@ -38,6 +39,7 @@ body {
   position:fixed;
   text-align:center;
   top:50%;
+  /* background-color: transparent; */
   transform:translate(-50%, -50%);
   border-top: 1px solid rgb(179, 175, 175);
   border-right:  solid 2px rgb(150, 146, 146);
