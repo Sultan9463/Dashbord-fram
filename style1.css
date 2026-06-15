@@ -27,10 +27,10 @@ aside {
   padding: 20px;
   margin: 8px;
   /* background-color: #817E7C; */
-  /* background-color: rgba(126, 125, 124, 0.4); */
+  background-color: rgba(126, 125, 124, 0.4);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(8px);
 }
 
 a:focus {
@@ -56,20 +56,20 @@ a:focus {
   border-bottom: 1px solid #adabab;
   z-index: 1000;
   padding: 0 25px;
-  width: 84%;
+  width: 85%;
   margin-left: 1%;
-  /* background-color: rgba(126, 125, 124, 0.4); */
+  background-color: rgba(126, 125, 124, 0.4);
   box-shadow: 0 22px 15px rgba(21, 21, 21, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
+  /* background-color: rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(10px);
 
 }
 .texx{
-  /* background-color: rgba(126, 125, 124, 0.4); */
+  background-color: rgba(126, 125, 124, 0.4);
   padding-inline: 0px;
   box-shadow: 0 22px 15px rgba(21, 21, 21, 0.2);
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  backdrop-filter: blur(6px);
 }
 
 /* ===== MAIN ===== */
