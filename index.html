@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashbord</title>
+    <title>Dashboard</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,26 +19,44 @@
     <div class="bg bg3"></div>
 
     <div class="content shadow">
-        <img src="image/Logo.png" class="pt-4" alt="">
-        <p class="pt-4 fs-3 text-white ">Se connecter</p>
-        <form action="" class="text-start">
-            <label for="" class="fs-4 text-white">Email</label> <br>
-            <input type="text" class="p-2 text-white w-100 border cole rounded mt-2 "> <br>
-             <label for="" class="fs-4 text-white">Mot de passe </label> <br>
-            <input type="password" class="p-2 text-white cole w-100 border rounded mt-2">
+        <img src="image/Logo.png" class="pt-3" alt="Logo">
+
+        <p class="pt-3 fs-3 text-start text-white">
+            Se connecter
+        </p>
+
+        <form action="dashboard.html" method="post" class="text-start">
+            <label class="fs-5 text-white">Email</label>
+            <br>
+            <input type="email" class="p-2 text-white w-100 border cole rounded mt-2" required>
+
+            <br><br>
+
+            <label class="fs-5 text-white">Mot de passe</label>
+            <br>
+            <input type="password" class="p-2 text-white cole w-100 border rounded mt-2" required>
+
+            <div class="d-flex align-items-center justify-content-center mt-4">
+                <button type="submit" class="login se rounded text-white p-2 fs-4 border-0">
+                    <a href="dashbor.html" class="text-white text-decoration-none">Se connecter</a>
+                </button>
+            </div>
         </form>
-        <div class="d-flex align-items-center justify-content-center">
-            <p class="mt-3 login  se rounded text-white p-2 fs-3 ">  <a href="dashbor.html" class="text-decoration-none text-white ">Se connecter</p>
-</a>
+
+        <p class="text-white avec mt-2">
+            ou continuer avec
+        </p>
+
+        <div class="p-2 d-flex gap-2 align-items-center justify-content-center">
+            <i class="bi bi-google login text-white rounded p-3 px-4 fs-3"></i>
+            <i class="bi bi-github login text-white rounded p-3 px-4 fs-3"></i>
+            <i class="bi bi-facebook login text-white rounded p-3 px-4 fs-3"></i>
         </div>
-        
-        <p class="text-white fs-4">ou continuer avec </p>
-        <div class="p-2">
-            <i class="bi bi-google login text-white rounded p-2  fs-3"></i>
-            <i class="bi bi-github login fs-3 text-white rounded p-2  fs-3"></i>
-            <i class="bi bi-facebook login fs-3 text-white rounded p-2 fs-3"></i>
-        </div>
-        <p class="fs-4 text-white">si vous n'avez pas de compte veuillez contacter <br> un administrateur</p>
+
+        <p class="adm p-2 text-white">
+            Si vous n'avez pas de compte, veuillez contacter
+            un administrateur.
+        </p>
     </div>
 </body>
 
